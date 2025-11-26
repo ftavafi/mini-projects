@@ -1,3 +1,7 @@
 # Python Mini Projects Dependencies
 # Add project dependencies here as needed
 
+# FastAPI Simple API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
