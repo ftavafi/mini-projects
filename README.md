@@ -5,7 +5,7 @@ A collection of small Python practice projects and warm-up exercises.
 ## Projects
 
 - [Simple Chatbot](simple_chatbot/) - A basic conversational chatbot with keyword-based responses
-- [FastAPI Simple API](fastapi-simple-api/) - A minimal REST API built with FastAPI, showcasing basic endpoints and automatic OpenAPI docs
+- [FastAPI Simple API](fastapi-simple-api/) - A REST API with full CRUD operations, Pydantic validation, and automatic OpenAPI documentation
 
 ## Setup
 
