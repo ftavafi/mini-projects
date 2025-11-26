@@ -1,0 +1,3 @@
+# Python Mini Projects Dependencies
+# Add project dependencies here as needed
+
