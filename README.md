@@ -9,10 +9,24 @@ A collection of small Python practice projects and warm-up exercises.
 
 ## Setup
 
-Create a virtual environment and install dependencies:
+1. Create a virtual environment (recommended):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+2. Install dependencies (if any):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Project Structure
+
+Each project should be in its own folder with:
+- `README.md` - Project description and instructions
+- `main.py` or `project_name.py` - Main code file
+- Any additional files as needed
+
+## Contributing
+
+Feel free to add your own mini projects here!
