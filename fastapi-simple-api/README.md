@@ -4,12 +4,11 @@ A REST API built with FastAPI, featuring full CRUD operations for managing items
 
 ## Features
 
-- ✅ Full CRUD operations (Create, Read, Update, Delete)
-- ✅ Pydantic models with field validation
-- ✅ Automatic OpenAPI/Swagger documentation
-- ✅ Type hints and response models
-- ✅ Error handling with proper HTTP status codes
-- ✅ In-memory data storage
+- Full CRUD operations (Create, Read, Update, Delete)
+- Pydantic models with field validation
+- Automatic OpenAPI/Swagger documentation
+- Error handling with proper HTTP status codes
+- In-memory data storage
 
 ## Run Locally
 
@@ -30,91 +29,11 @@ A REST API built with FastAPI, featuring full CRUD operations for managing items
 
 ## API Endpoints
 
-### `GET /`
-Returns a welcome message.
-
-**Response:**
-```json
-{
-  "message": "Hello from Tara's FastAPI mini project!"
-}
-```
-
-### `GET /items`
-Get all items.
-
-**Response:** List of items
-
-### `GET /items/{item_id}`
-Get a single item by ID.
-
-**Parameters:**
-- `item_id` (path): Integer ID of the item
-
-**Response:** Item object or 404 if not found
-
-### `POST /items`
-Create a new item.
-
-**Request Body:**
-```json
-{
-  "name": "Item Name",
-  "price": 29.99,
-  "description": "Optional description"
-}
-```
-
-**Validation:**
-- `name`: Required, minimum 1 character
-- `price`: Required, must be greater than 0
-- `description`: Optional
-
-**Response:** Created item with generated ID (status 201)
-
-### `DELETE /items/{item_id}`
-Delete an item by ID.
-
-**Parameters:**
-- `item_id` (path): Integer ID of the item
-
-**Response:** 204 No Content on success, 404 if not found
-
-## Example Usage
-
-### Create an item:
-```bash
-curl -X POST "http://localhost:8000/items" \
-  -H "Content-Type: application/json" \
-  -d '{"name": "Laptop", "price": 999.99, "description": "Gaming laptop"}'
-```
-
-### Get all items:
-```bash
-curl http://localhost:8000/items
-```
-
-### Get a specific item:
-```bash
-curl http://localhost:8000/items/1
-```
-
-### Delete an item:
-```bash
-curl -X DELETE http://localhost:8000/items/1
-```
-
-## Data Model
-
-```python
-ItemCreate:
-  - name: str (required, min_length=1)
-  - price: float (required, > 0)
-  - description: Optional[str]
-
-Item (extends ItemCreate):
-  - id: int (auto-generated)
-```
+- `GET /` - Welcome message
+- `GET /items` - Get all items
+- `GET /items/{item_id}` - Get a single item by ID
+- `POST /items` - Create a new item (requires name, price, optional description)
+- `DELETE /items/{item_id}` - Delete an item by ID
 
 ## Notes
 
