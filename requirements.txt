@@ -5,3 +5,11 @@
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
 
+# CLV Prediction (PySpark + XGBoost + MLflow)
+pyspark
+xgboost
+mlflow
+scikit-learn
+pandas
+matplotlib
+seaborn

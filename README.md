@@ -6,6 +6,7 @@ A collection of small Python practice projects and warm-up exercises.
 
 - [Simple Chatbot](simple_chatbot/) - A basic conversational chatbot with keyword-based responses
 - [FastAPI Simple API](fastapi-simple-api/) - A REST API with full CRUD operations, Pydantic validation, and automatic OpenAPI documentation
+- [Customer Lifetime Value (CLV) Prediction with PySpark + XGBoost + MLflow](clv-prediction-pyspark-xgboost-MLflow/) - CLV and future revenue prediction using PySpark, tree-based models, and MLflow tracking
 
 ## Setup
 
